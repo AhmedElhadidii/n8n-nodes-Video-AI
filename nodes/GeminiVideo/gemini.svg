@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Gemini</title>
+    <g id="Gemini" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M16,2 C23.732,2 30,8.268 30,16 C30,23.732 23.732,30 16,30 C8.268,30 2,23.732 2,16 C2,8.268 8.268,2 16,2 Z" id="Circle" fill="#8E75FF"></path>
+        <path d="M13,9 L13,23 L11,23 L11,9 L13,9 Z M21,9 L21,23 L19,23 L19,9 L21,9 Z" id="Gemini-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        <path d="M14,12 L18,12 L18,14 L14,14 L14,12 Z M14,16 L18,16 L18,18 L14,18 L14,16 Z M14,20 L18,20 L18,22 L14,22 L14,20 Z" id="Video-Frames" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

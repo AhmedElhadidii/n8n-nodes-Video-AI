@@ -1,19 +1,22 @@
 {
-  "name": "n8n-nodes-<...>",
+  "name": "n8n-nodes-gemini-video",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n node for video analysis using Google's Gemini AI",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "gemini",
+    "video-analysis",
+    "ai"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/hadidiz/n8n-nodes-gemini-video",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Hadidiz Flow",
+    "email": "your-email@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/hadidiz/n8n-nodes-gemini-video.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -37,11 +40,12 @@
     "n8nNodesApiVersion": 1,
     "credentials": [
       "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/HttpBinApi.credentials.js",
+      "dist/credentials/GeminiApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/HttpBin/HttpBin.node.js",
+      "dist/nodes/GeminiVideo/GeminiVideo.node.js"
     ]
   },
   "devDependencies": {
@@ -50,9 +54,11 @@
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
     "gulp": "^4.0.2",
     "prettier": "^3.3.2",
-    "typescript": "^5.5.3"
+    "typescript": "^5.5.3",
+    "n8n-workflow": "^1.82.0"
   },
-  "peerDependencies": {
-    "n8n-workflow": "*"
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "node-fetch": "^3.3.2"
   }
 }
