@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-video-ai",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "n8n node for AI-powered video Operations (analysis, Review, Summarize, etc), currently supporting Google Gemini.",
   "keywords": [
     "n8n-community-node-package",
