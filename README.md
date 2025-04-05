@@ -1,46 +1,60 @@
-![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
+# n8n Video AI Node
 
-# n8n-nodes-starter
+[![NPM Version](https://img.shields.io/npm/v/n8n-nodes-video-ai.svg?style=flat)](https://www.npmjs.com/package/n8n-nodes-video-ai)
+[![NPM Downloads](https://img.shields.io/npm/dm/n8n-nodes-video-ai.svg?style=flat)](https://www.npmjs.com/package/n8n-nodes-video-ai)
+[![License](https://img.shields.io/npm/l/n8n-nodes-video-ai.svg?style=flat)](https://github.com/AhmedElhadidii/n8n-nodes-Video-AI/blob/main/LICENSE.md)
 
-This repo contains example nodes to help you get started building your own custom integrations for [n8n](n8n.io). It includes the node linter and other dependencies.
+This is an [n8n](https://n8n.io/) community node package for performing AI-powered analysis on video files.
 
-To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
+Created by [**Hadidiz**](https://HadidizFlow.com).
 
-## Prerequisites
+- [Website](https://HadidizFlow.com)
+- [YouTube Channel](https://www.youtube.com/@Hadidiz)
 
-You need the following installed on your development machine:
+## Features
 
-* [git](https://git-scm.com/downloads)
-* Node.js and pnpm. Minimum version Node 18. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
-* Install n8n with:
-  ```
-  pnpm install n8n -g
-  ```
-* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+-   Analyze videos using AI models.
+-   Provide a video URL and a custom prompt for analysis.
+-   **Currently supports Google Gemini models.**
+-   *More AI providers will be added in the future!*
 
-## Using this starter
+## Installation
 
-These are the basic steps for working with the starter. For detailed guidance on creating and publishing nodes, refer to the [documentation](https://docs.n8n.io/integrations/creating-nodes/).
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
-1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
-2. Clone your new repo:
-   ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
-   ```
-3. Run `pnpm i` to install dependencies.
-4. Open the project in your editor.
-5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
-6. Update the `package.json` to match your details.
-7. Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
-10. Update the LICENSE file to use your details.
-11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+1.  Go to **Settings > Community Nodes**.
+2.  Select **Install**.
+3.  Enter `n8n-nodes-video-ai` in the search box.
+4.  Agree to the risks and install the node.
 
-## More information
+Alternatively, you can install using npm if you are self-hosting n8n:
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+```bash
+npm install n8n-nodes-video-ai
+```
+
+## Usage
+
+1.  **Add the Node**: Find the "Gemini Video Analysis" node in the node panel and add it to your workflow.
+2.  **Configure Credentials**: 
+    *   Go to the **Credentials** section in n8n.
+    *   Create new credentials for "Gemini API".
+    *   Enter your Google Gemini API key.
+    *   Save the credentials.
+    *   Select the created credentials in the node.
+3.  **Provide Video URL**: Enter the direct URL to the video file you want to analyze.
+4.  **Enter Custom Prompt**: Write a specific prompt instructing the AI on what analysis to perform (e.g., "Summarize this video", "Describe the main objects in the scene", "Generate a transcript").
+5.  **Select Model**: Choose the Gemini model you want to use (e.g., Gemini 1.5 Flash, Gemini 1.5 Pro).
+6.  **Run the Node**: Execute the node to get the analysis result in the output `text` field.
+
+## Compatibility
+
+Tested with n8n version 1.85.4.
+
+## Contributing
+
+Contributions are welcome! Please refer to the [n8n contributing guidelines](https://github.com/n8n-io/n8n/blob/master/CONTRIBUTING.md).
 
 ## License
 
-[MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+[MIT](LICENSE.md)
