@@ -6,7 +6,10 @@
     "n8n-community-node-package",
     "gemini",
     "video-analysis",
-    "ai"
+    "ai",
+    "hadidiz Flow",
+    "hadidiz",
+    "hadidizFlow.com"
   ],
   "license": "MIT",
   "homepage": "https://github.com/hadidiz/n8n-nodes-gemini-video",
